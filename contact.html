@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UntrefSchool Contacto</title>
+    <link rel="stylesheet" href="/bootstrap/bootstrap-5.3.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/assets/images/fontawesome-free-6.4.0-web/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">UntrefSchool</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contact">
+      <h1 class="contact_h1">Envíanos tu consulta!</h1>
+        <div class="container">
+            <form action="https://formsubmit.co/arenzojuli@gmail.com" method="POST">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre*</label>
+                    <input type="text" class="form-control" id="nombre" name="Nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="apellido" class="form-label">Apellido*</label>
+                    <input type="text" class="form-control" id="apellido" name="Apellido" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email*</label>
+                    <input type="email" class="form-control" id="email" name="Email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" name="Mensaje" rows="4"></textarea>
+                </div>
+                <div class="d-grid justify-content-end">
+                    <button type="submit" class="custombutton">Enviar</button>
+                </div>
+            </form>
+          </div>
+        <div class="contact_info">
+            <p>Estamos aquí para responder a tus preguntas y brindarte la información que necesitas. Completá el formulario y nos pondremos en contacto contigo en breve.</p>
+            <h2>¡Gracias por considerarnos como tu opción educativa!</h2> 
+          </div>
+    </main>
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="footer">
+                <div class="social_icons">
+                  <a href="https://www.facebook.com/untref"><i class="fab fa-facebook"></i></a>
+                  <a href="https://www.instagram.com/untref"><i class="fab fa-instagram"></i></a>
+                  <a href="https://twitter.com/UNTREF"><i class="fab fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="footer">
+                <div class="school_name">
+                  <h6>UntrefSchool</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="footer">
+                <div class="contact_info">
+                  <p>uschool@gmail.com</p>
+                  <p>Tel: 11 6354-2345</p>
+                  <p>Wsp: 11 6354-2333</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script src="/bootstrap/bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

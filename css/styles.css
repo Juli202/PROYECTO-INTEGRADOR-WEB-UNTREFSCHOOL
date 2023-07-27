@@ -1,0 +1,457 @@
+@font-face {
+  font-family: 'Poppins', sans-serif;
+  src: url(/assets/fonts/poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Belanosima', sans-serif;
+  src: url(/assets/fonts/belanosima/Belanosima-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: url(/assets/fonts/poppins/Poppins-Bold.ttf);
+}
+
+
+:root {
+    --color-buttons: #FC7300;
+    --color-subtitles: #1F8A70;
+    --color-title: #00425A;
+    --color-dark: #181823;
+    --color-light: #EFF5F5;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+  }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* NAVBAR */
+
+.navbar, footer {
+  background-color: var(--color-title);
+  color: var(--color-white);
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-brand {
+  font-family: 'Belanosima', sans-serif;
+}
+
+.nav-link {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+/* NAVBAR */
+
+/* MAIN */
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5em;
+  padding: 1em;
+  grid-template-areas: 
+  "mainh1"
+  "mainimg"
+  "mainbtn";
+}
+
+main img {
+  width: 90%; 
+  margin: 0 auto; 
+  border-radius: 1.25em;
+  grid-area: mainimg;
+}
+
+h1 {
+  font-family: 'Poppins-Bold', sans-serif;
+  font-size: 2em;
+  margin: 0.5em 0 0 0;
+  padding: 0 1em;
+  text-align: center;
+  grid-area: mainh1;
+}
+
+span.title-color {
+  color: var(--color-title);
+}
+
+span.subtitles-color {
+  color: var(--color-subtitles);
+}
+
+span.buttons-color {
+  color: var(--color-buttons);
+}
+
+.custombutton {
+  text-decoration: none;
+  background-color: var(--color-buttons);
+  color: var(--color-white);
+  font-family: 'Belanosima', sans-serif;
+  border-radius: 1.25em;
+  text-align: center;
+  padding: 0.5em 1em;
+  border: none;
+  width: auto; 
+  margin: 0 auto; 
+  grid-area: mainbtn;
+}
+/* 
+MAIN */
+
+h2 {
+  font-family: 'Poppins-Bold', sans-serif;
+  font-size: 1.5em; 
+  color: var(--color-title);
+  text-align: center;
+}
+
+#about_us, #why_choose_us, #educational_proposal {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+#about_us, #why_choose_us, #educational_proposal p {
+  font-size: 1.1em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+
+.main_images {
+/* width: 75vw; */
+border-radius: 1.25em;
+}
+
+.proposal_item {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.proposal_item h3 {
+  font-family: 'Belanosima', sans-serif;
+  color: var(--color-subtitles);
+}
+
+ #bilingual_training {
+  width: 12em; 
+  height: 12em; 
+  border-radius: 50%;
+  background-image: url(/assets/images/english_teacher_with_students.jpg);
+  background-size: cover;
+ 
+}
+
+#artistic_training {
+  width: 12em; 
+  height: 12em; 
+  border-radius: 50%;
+  background-image: url(/assets/images/school_kids_drawing.jpg);
+  background-size: cover;
+}
+
+#physical_training {
+  width: 12em; 
+  height: 12em; 
+  border-radius: 50%;
+  background-image: url(/assets/images/school_kids_playing_futbol.jpeg);
+  background-size: cover;
+}
+
+#tech_education {
+  width: 12em; 
+  height: 12em; 
+  border-radius: 50%;
+  background-image: url(/assets/images/school_kid_using_vrheadset.jpg);
+  background-size: cover;
+}
+
+#environmental_education {
+  width: 12em; 
+  height: 12em; 
+  border-radius: 50%;
+  background-image: url(/assets/images/school_kids_in_the_nature.jpg);
+  background-size: cover;
+}
+
+/* LATEST NEWS */
+
+.carousel-inner {
+  padding: 1em;
+}
+
+.card {
+  border-radius: 1.25em;
+  margin: 0 0.5em;
+}
+
+.card-img-top {
+  border-top-left-radius: 1.25em;
+  border-top-right-radius: 1.25em;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: var(--color-buttons);
+  border-radius: 50%;
+}
+
+#latest_news {
+  margin-bottom: 0.5em;
+}
+
+/* LATEST NEWS */
+
+/* FOOTER */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Belanosima', sans-serif;
+  gap: 1em;
+}
+
+.social_icons {
+  font-size: 2em;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5em;
+}
+
+i.fa-facebook, i.fa-twitter, i.fa-instagram {
+  color: white;
+}
+
+.footer h6 {
+  font-size: 1.5em;
+}
+
+.contact_info p {
+  line-height: 1.5em;
+}
+
+.social_icons p {
+  display: none;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.contact_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.contact_info p {
+ text-align: center;
+ margin: 0;
+}
+
+/* FOOTER */
+
+/* CONTACT */
+
+.contact {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+}
+.contact_h1 {
+  color: var(--color-title);
+}
+
+.container {
+  padding: 1em;
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr;
+    min-height: 100vh;
+    align-items: center; 
+    grid-template-areas: 
+    "mainimg mainh1"
+    "mainimg mainbtn";
+  }
+  
+  main img {
+    width: 75%; 
+    border-radius: 1.25em;
+  }
+  
+  h1 {
+    font-family: 'Poppins-Bold', sans-serif;
+    font-size: 2em; 
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    align-self: flex-end;
+
+  }
+  
+  .custombutton {
+    text-decoration: none;
+    background-color: var(--color-buttons);
+    color: var(--color-white);
+    font-family: 'Belanosima', sans-serif;
+    border-radius: 1.25em;
+    text-align: center;
+    padding: 0.5em 1em;
+    border: none;
+    width: auto;  
+    align-self: flex-start;
+  }
+
+  .main_images {
+    width: 50vw;
+    border-radius: 1.25em;
+    }
+
+ .info {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 1em;
+    grid-template-areas: 
+    "aboutus"
+    "whychooseus";
+  }
+
+  #about_us_first {
+    grid-area: "aboutusfirst";
+  }
+
+  #school_kid {
+    grid-area: kidimg;
+  }
+
+  #about_us {
+    grid-area: aboutus;
+    display: grid;
+    margin: 0 1.5em;
+    padding: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "aboutusfirst kidimg";
+  }
+
+  #why_choose_us {
+    grid-area: whychooseus;
+    display: grid;
+    margin: 0 1.5em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "schoolteacherimg whychooseusfirst";
+
+  }
+
+  #why_choose_us_first {
+    grid-area: whychooseusfirst;
+  }
+
+  #school_teacher {
+    grid-area: schoolteacherimg;
+  }
+
+  #educational_proposal {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr;
+    grid-template-areas: 
+    "proposalh2"
+    "container";
+  }
+
+  #educational_proposal_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-area: container;
+    grid-template-areas:
+    "one two"
+    "three four"
+    "five .";
+  }
+
+
+  .educational_proposal h2 {
+    grid-area: proposalh2;
+  }
+  #proposal_item_1 {
+    grid-area: one;
+  }
+
+  #proposal_item_2 {
+    grid-area: two;
+  }
+
+  #proposal_item_3 {
+    grid-area: three;
+  }
+
+  #proposal_item_4 {
+    grid-area: four;
+  }
+
+  #proposal_item_5 {
+    grid-area: five;
+  }
+
+
+
+  .footer .social_icons {
+    flex-direction: column;
+    gap: 0.5em;
+    font-size: 1.5em; 
+    justify-content:space-evenly;
+   }
+
+  .col-md-4 .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .contact_info {
+   gap: 1.5em;
+  }
+
+}
+
+
+
+
+
+
+
