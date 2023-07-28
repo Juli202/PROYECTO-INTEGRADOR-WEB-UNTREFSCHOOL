@@ -9,7 +9,7 @@
 }
 
 @font-face {
-  font-family: 'Poppins-Bold', sans-serif;
+  font-family: 'Poppins', sans-serif;
   src: url(/assets/fonts/poppins/Poppins-Bold.ttf);
 }
 
@@ -153,7 +153,7 @@ border-radius: 1.25em;
   width: 12em; 
   height: 12em; 
   border-radius: 50%;
-  background-image: url(assets/images/english_teacher_with_students.jpg);
+  background-image: url(/assets/images/english_teacher_with_students.jpg);
   background-size: cover;
  
 }
@@ -162,7 +162,7 @@ border-radius: 1.25em;
   width: 12em; 
   height: 12em; 
   border-radius: 50%;
-  background-image: url(assets/images/school_kids_drawing.jpg);
+  background-image: url(/assets/images/school_kids_drawing.jpg);
   background-size: cover;
 }
 
@@ -170,7 +170,7 @@ border-radius: 1.25em;
   width: 12em; 
   height: 12em; 
   border-radius: 50%;
-  background-image: url(assets/images/school_kids_playing_futbol.jpeg);
+  background-image: url(/assets/images/school_kids_playing_futbol.jpeg);
   background-size: cover;
 }
 
@@ -178,7 +178,7 @@ border-radius: 1.25em;
   width: 12em; 
   height: 12em; 
   border-radius: 50%;
-  background-image: url(assets/images/school_kid_using_vrheadset.jpg);
+  background-image: url(/assets/images/school_kid_using_vrheadset.jpg);
   background-size: cover;
 }
 
@@ -186,7 +186,7 @@ border-radius: 1.25em;
   width: 12em; 
   height: 12em; 
   border-radius: 50%;
-  background-image: url(assets/images/school_kids_in_the_nature.jpg);
+  background-image: url(/assets/images/school_kids_in_the_nature.jpg);
   background-size: cover;
 }
 
@@ -194,7 +194,7 @@ border-radius: 1.25em;
   width: 12em; 
   height: 12em; 
   border-radius: 50%;
-  background-image: url(assets/images/school_music.jpg);
+  background-image: url(/assets/images/school_music.jpg);
   background-size: cover;
 }
 
