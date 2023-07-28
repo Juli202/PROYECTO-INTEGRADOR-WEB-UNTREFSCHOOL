@@ -134,7 +134,7 @@ h2 {
 }
 
 .main_images {
-/* width: 75vw; */
+width: 75vw;
 border-radius: 1.25em;
 }
 
@@ -308,12 +308,11 @@ i.fa-facebook, i.fa-twitter, i.fa-instagram {
   
   h1 {
     font-family: 'Poppins-Bold', sans-serif;
-    font-size: 2em; 
-    margin: 0;
+    font-size: 2.2em; 
+    margin: 0 0 1em 0;
     padding: 0;
     text-align: center;
     align-self: flex-end;
-
   }
   
   .custombutton {
@@ -334,11 +333,16 @@ i.fa-facebook, i.fa-twitter, i.fa-instagram {
     border-radius: 1.25em;
     }
 
+    h2 {
+      margin-bottom: 1em;
+      font-size: 1.8em;
+    }
+
  .info {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    row-gap: 1em;
+    row-gap: 2.5em;
     grid-template-areas: 
     "aboutus"
     "whychooseus";
@@ -350,6 +354,7 @@ i.fa-facebook, i.fa-twitter, i.fa-instagram {
 
   #school_kid {
     grid-area: kidimg;
+    margin-top: 0.5em;
   }
 
   #about_us {
@@ -380,9 +385,12 @@ i.fa-facebook, i.fa-twitter, i.fa-instagram {
 
   #school_teacher {
     grid-area: schoolteacherimg;
+    margin-top:2em;
+
   }
 
   #educational_proposal {
+    margin-top: 2.5em;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.2fr;
@@ -401,7 +409,6 @@ i.fa-facebook, i.fa-twitter, i.fa-instagram {
     "three four"
     "five .";
   }
-
 
   .educational_proposal h2 {
     grid-area: proposalh2;
@@ -426,7 +433,9 @@ i.fa-facebook, i.fa-twitter, i.fa-instagram {
     grid-area: five;
   }
 
-
+  .main_images {
+    width: 40vw;
+  }
 
   .footer .social_icons {
     flex-direction: column;
@@ -446,6 +455,16 @@ i.fa-facebook, i.fa-twitter, i.fa-instagram {
   .contact_info {
    gap: 1.5em;
   }
+
+  .contact_info p {
+    text-align: center;
+    margin: 0;
+    font-size: 1.4em;
+   }
+
+   form {
+    padding: 0 1em;
+   }
 
 }
 
