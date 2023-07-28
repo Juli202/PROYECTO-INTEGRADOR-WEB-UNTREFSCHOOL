@@ -269,6 +269,7 @@ i.fa-facebook, i.fa-twitter, i.fa-instagram {
   flex-direction: column;
   justify-content: space-between;
   gap: 1em;
+  padding: 0 1.5em;
 }
 
 .contact_info p {
