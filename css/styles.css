@@ -59,7 +59,6 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5em;
-  padding: 1em;
   grid-template-areas: 
   "mainh1"
   "mainimg"
@@ -112,9 +111,9 @@ MAIN */
 
 h2 {
   font-family: 'Poppins-Bold', sans-serif;
-  font-size: 1.5em; 
   color: var(--color-title);
   text-align: center;
+  margin-bottom: 0.5em;
 }
 
 #about_us, #why_choose_us, #educational_proposal {
@@ -142,7 +141,6 @@ border-radius: 1.25em;
   display: flex;
   flex-flow: column wrap;
   gap: 1em;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -192,6 +190,14 @@ border-radius: 1.25em;
   background-size: cover;
 }
 
+#music_education {
+  width: 12em; 
+  height: 12em; 
+  border-radius: 50%;
+  background-image: url(/assets/images/school_music.jpg);
+  background-size: cover;
+}
+
 /* LATEST NEWS */
 
 .carousel-inner {
@@ -214,7 +220,7 @@ border-radius: 1.25em;
 }
 
 #latest_news {
-  margin-bottom: 0.5em;
+  margin-bottom: 1.5em;
 }
 
 /* LATEST NEWS */
@@ -249,8 +255,8 @@ i.fa-facebook, i.fa-twitter, i.fa-instagram {
   line-height: 1.5em;
 }
 
-.social_icons p {
-  display: none;
+.contact h1 {
+  margin-bottom: 1.5em;
 }
 
 .copyright {
@@ -296,6 +302,7 @@ i.fa-facebook, i.fa-twitter, i.fa-instagram {
     grid-template-rows: 1fr 1fr;
     min-height: 100vh;
     align-items: center; 
+    column-gap: 0;
     grid-template-areas: 
     "mainimg mainh1"
     "mainimg mainbtn";
@@ -308,8 +315,8 @@ i.fa-facebook, i.fa-twitter, i.fa-instagram {
   
   h1 {
     font-family: 'Poppins-Bold', sans-serif;
-    font-size: 2.2em; 
-    margin: 0 0 1em 0;
+    font-size: 2.5em; 
+    margin: 0;
     padding: 0;
     text-align: center;
     align-self: flex-end;
@@ -335,7 +342,7 @@ i.fa-facebook, i.fa-twitter, i.fa-instagram {
 
     h2 {
       margin-bottom: 1em;
-      font-size: 1.8em;
+      font-size: 2em;
     }
 
  .info {
@@ -354,7 +361,6 @@ i.fa-facebook, i.fa-twitter, i.fa-instagram {
 
   #school_kid {
     grid-area: kidimg;
-    margin-top: 0.5em;
   }
 
   #about_us {
@@ -385,12 +391,9 @@ i.fa-facebook, i.fa-twitter, i.fa-instagram {
 
   #school_teacher {
     grid-area: schoolteacherimg;
-    margin-top:2em;
-
   }
 
   #educational_proposal {
-    margin-top: 2.5em;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.2fr;
@@ -407,11 +410,12 @@ i.fa-facebook, i.fa-twitter, i.fa-instagram {
     grid-template-areas:
     "one two"
     "three four"
-    "five .";
+    "five six";
   }
 
   .educational_proposal h2 {
     grid-area: proposalh2;
+    font-size: 2em;
   }
   #proposal_item_1 {
     grid-area: one;
@@ -433,8 +437,16 @@ i.fa-facebook, i.fa-twitter, i.fa-instagram {
     grid-area: five;
   }
 
+  #proposal_item_6 {
+    grid-area: six;
+  }
+
   .main_images {
     width: 40vw;
+  }
+
+  #latest_news {
+    padding: 0 3em;
   }
 
   .footer .social_icons {
@@ -456,21 +468,207 @@ i.fa-facebook, i.fa-twitter, i.fa-instagram {
    gap: 1.5em;
   }
 
+  .contact_info h2 {
+    font-size: 2em;
+  }
+
   .contact_info p {
     text-align: center;
     margin: 0;
-    font-size: 1.4em;
+    font-size: 1.5em;
    }
 
    form {
     padding: 0 1em;
    }
-
 }
 
+@media (min-width: 1024px) {
 
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr;
+    row-gap: 3em;
+    column-gap: 0;
+    min-height: 100vh;
+    margin-bottom: 3em;
+    align-items: center; 
+    grid-template-areas: 
+    "mainimg mainh1"
+    "mainimg mainbtn";
+  }
+  
+  main img {
+    width: 75%; 
+    height: 90%;
+    border-radius: 1.25em;
+  }
+  
+  h1 {
+    font-family: 'Poppins-Bold', sans-serif;
+    font-size: 3em; 
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    align-self: flex-end;
+  }
+  
+  .custombutton {
+    text-decoration: none;
+    font-size: 1.2em;
+    background-color: var(--color-buttons);
+    color: var(--color-white);
+    font-family: 'Belanosima', sans-serif;
+    border-radius: 1.25em;
+    text-align: center;
+    padding: 0.5em 1em;
+    border: none;
+    width: auto;  
+    align-self: flex-start;
+  }
 
+  .main_images {
+    width: 45vw;
+    border-radius: 1.25em;
+    }
 
+    h2 {
+      margin-bottom: 1em;
+      font-size: 2em;
+    }
 
+ .info {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 3em;
+    margin-bottom: 3em;
+    grid-template-areas: 
+    "aboutus"
+    "whychooseus";
+  }
 
+  #about_us_first {
+    grid-area: "aboutusfirst";
+  }
 
+  #school_kid {
+    grid-area: kidimg;
+  }
+
+  #about_us {
+    grid-area: aboutus;
+    display: grid;
+    margin: 0 1.5em;
+    padding: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "aboutusfirst kidimg";
+  }
+
+  #why_choose_us {
+    grid-area: whychooseus;
+    display: grid;
+    margin: 0 1.5em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "schoolteacherimg whychooseusfirst";
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+  #why_choose_us_first {
+    grid-area: whychooseusfirst;
+  }
+
+  #school_teacher {
+    grid-area: schoolteacherimg;
+  }
+
+  #educational_proposal {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr;
+    grid-template-areas: 
+    "proposalh2"
+    "container";
+    margin-bottom: 3em;
+  }
+
+  #educational_proposal_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-area: container;
+    grid-template-areas:
+    "one two three"
+    "four five six";
+  }
+
+  .educational_proposal h2 {
+    grid-area: proposalh2;
+    font-size: 2em;
+  }
+  #proposal_item_1 {
+    grid-area: one;
+  }
+
+  #proposal_item_2 {
+    grid-area: two;
+  }
+
+  #proposal_item_3 {
+    grid-area: three;
+  }
+
+  #proposal_item_4 {
+    grid-area: four;
+  }
+
+  #proposal_item_5 {
+    grid-area: five;
+  }
+
+  #latest_news {
+    padding: 0 3em;
+  }
+
+  .footer .social_icons {
+    flex-direction: column;
+    gap: 0.5em;
+    font-size: 1.5em; 
+    justify-content:space-evenly;
+   }
+
+  .col-md-4 .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .contact_info {
+    gap: 1.5em;
+   }
+ 
+   .contact_info h2 {
+     font-size: 3em;
+   }
+ 
+   .contact_info p {
+     text-align: center;
+     margin: 0;
+     font-size: 2em;
+    }
+ 
+    form {
+     padding: 0 1.5em;
+    }
+
+}
